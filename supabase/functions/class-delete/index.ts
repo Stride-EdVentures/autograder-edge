@@ -112,6 +112,3 @@ serve(async (req) => {
     status: 200,
   })
 })
-
-// To invoke:
-// curl -L -X POST 'https://rhojoslgtpvnlmsfppjq.supabase.co/functions/v1/class-delete' -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJob2pvc2xndHB2bmxtc2ZwcGpxIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTU1MDE0MTQsImV4cCI6MTk3MTA3NzQxNH0.GYmHNPhcL-uiKxA_ImhxvEd8iM6FyxDh3n2etfODVag' --data '{"classId":"f0ed0960-f3ad-4dc5-83af-ed32f98161a6"}'
