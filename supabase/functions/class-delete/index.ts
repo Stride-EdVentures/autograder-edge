@@ -47,6 +47,7 @@ serve(async (req) => {
   const connection = await pool.connect()
   const supabaseClient = createSupabaseClient(req)
 
+  let files = [];
   try {
     const aResults =
       await connection.queryObject`SELECT * FROM assignments where class_id = ${classId}`
@@ -103,6 +104,7 @@ serve(async (req) => {
 
   const response = {
     message: `Deleting ${classId}!`,
+    deletedFiles: files
   }
 
   console.log('response', response)
